@@ -69,10 +69,10 @@ body {
       display: inline-block;
       vertical-align: middle;
       margin-left: 20px;
-      background: url("next-page.svg");
+      background: url("https://jdniki.github.io/signup/images/next-page.svg");
       background-size: contain;
       &:hover {
-        background: url("next-pagehover.svg");
+        background: url("https://jdniki.github.io/signup/images/next-pagehover.svg");
         background-size: contain;
       }
     }
@@ -109,7 +109,52 @@ body {
           opacity: 0;
           margin-top: 150px;
         }
-        
+        /*-------------Password ------------------*/
+        #viewpswd {
+          position: absolute;
+          opacity: 0;
+          //                    z-index:-100;
+        }
+        #show-pwd {
+          margin: -2.75em 0em;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          right: 0;
+          color: rgba(255, 255, 255, 0.4);
+          cursor: pointer;
+          &.view {
+            background: url("https://jdniki.github.io/signup/images/view.svg");
+            background-size: contain;
+          }
+          &.hide {
+            background: url("https://jdniki.github.io/signup/images/hide.svg");
+            background-size: contain;
+          }
+        }
+        #show-pwd:active,
+        #show-pwd:focus {
+          background: url("https://jdniki.github.io/signup/images/hide.svg");
+          background-size: contain;
+        }
+        select.country {
+          position: absolute;
+          width: 4.5em;
+          font-size: 0.7em;
+          color: #f2f2f2;
+          height: 70px;
+          background: transparent;
+          border: 1px solid #ccc;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border: none;
+        }
+        #phone {
+          padding-left: 5em;
+        }
+      }
+    }
   }
   .error-message {
     color: rgba(207, 0, 0, 0.56);
