@@ -69,10 +69,10 @@ body {
       display: inline-block;
       vertical-align: middle;
       margin-left: 20px;
-      background: url("https://jdniki.github.io/signup/images/next-page.svg");
+      background: url("next-page.svg");
       background-size: contain;
       &:hover {
-        background: url("https://jdniki.github.io/signup/images/next-pagehover.svg");
+        background: url("next-pagehover.svg");
         background-size: contain;
       }
     }
