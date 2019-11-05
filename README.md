@@ -1,1 +1,1 @@
-# cs226.io
+# https://basketballstats.github.io/cs226/
