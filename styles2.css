@@ -1,0 +1,41 @@
+body{
+    margin: 3em 3em 3em 3em;
+    background-image: radial-gradient(#071b3b,#3b0907);
+}
+img{
+    padding-top: 2em;
+    width: 700px;
+    height: 500px;
+}
+h1{
+    background:#071b3b;
+    font-size: 50px;
+    font-family: Helvetica;
+    color: white;
+}
+footer{
+    color: white;
+}
+nav{
+    background:white;
+    color: white;
+    font-size: 30px;
+    font-family: Helvetica;
+    padding-bottom: 5px;
+    font-weight: bold;
+    word-spacing: 1em;
+    text-align: left;
+    text-decoration: none;
+}
+a{
+    color:#071b3b;
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color:#150a57;
+}
+a:hover{
+    text-decoration: none;
+    color:#6b110e;
+}
