@@ -9,7 +9,7 @@
 
 <?php
 
-$con = mysql_connect("server","id","password");
+$con = mysql_connect("bonsai.lcsc.edu","CS226student","Thursday#21");
 
 if (!$con)
 
@@ -25,7 +25,7 @@ mysql_select_db("id", $con);
 
  
 
-$sql="INSERT INTO tablename (input1, input2)
+$sql="INSERT INTO test (input1, input2)
 
 VALUES
 
