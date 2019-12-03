@@ -21,7 +21,7 @@ if (!$con)
 
  
 
-mysql_select_db("id", $con);
+mysql_select_db("CS226student", $con);
 
  
 
