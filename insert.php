@@ -1,27 +1,56 @@
 
+<html>
+
+<body>
+
+ 
+
+ 
+
 <?php
-/* Attempt MySQL server connection. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-$link = mysqli_connect("localhost", "root", "TESTDATABASE1", "demo");
+
+$con = mysql_connect("server","id","password");
+
+if (!$con)
+
+  {
+
+  die('Could not connect: ' . mysql_error());
+
+  }
+
  
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+
+mysql_select_db("id", $con);
+
  
-// Escape user inputs for security
-$STATES = mysqli_real_escape_string($link, $_REQUEST['STATES']);
-$last_name = mysqli_real_escape_string($link, $_REQUEST['last_name']);
-$email = mysqli_real_escape_string($link, $_REQUEST['email']);
+
+$sql="INSERT INTO tablename (input1, input2)
+
+VALUES
+
+('$_POST[input1]','$_POST[input2]')";
+
  
-// Attempt insert query execution
-$sql = "INSERT INTO TEST_TABLE (STATES, last_name, email) VALUES ('$STATES', '$last_name', '$email')";
-if(mysqli_query($link, $sql)){
-    echo "Records added successfully.";
-} else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-}
+
+if (!mysql_query($sql,$con))
+
+  {
+
+  die('Error: ' . mysql_error());
+
+  }
+
+echo "1 record added";
+
  
-// Close connection
-mysqli_close($link);
+
+mysql_close($con)
+
 ?>
+
+</body>
+
+</html>
+
+ 
